@@ -1,2 +1,2 @@
 192.168.104.102:50001/WCFService_SAP_WH/DataService.svc
-ConnStr:server=192.168.104.81;database=OrBitXIJF;uid=mes;pwd=Mes.2018
+ConnStr:server=192.168.104.82;database=OrBitXIJF;uid=mes;pwd=Mes.2018
