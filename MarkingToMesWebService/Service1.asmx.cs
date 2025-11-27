@@ -346,6 +346,14 @@ namespace MarkingToMesWebService
              */
         }
 
+        /* COB在线喷码使用此方法 */
+        [WebMethod]
+        public string PCBOnlineMiniCob(string MoName, string Operator, string EquipmentNOCode, string PMType, bool IsHBIN, string HideLotSN, string ParentLotSn, string SmtBin)
+        {
+            // 20251127 qianyingying 芜湖重新部署 兼容COB在线喷码（无CarrierNO)
+            return PCBOnline1(MoName, Operator, EquipmentNOCode, PMType, IsHBIN, HideLotSN, ParentLotSn, SmtBin, "");
+        }
+
         /// <summary>
         /// COB 在线使用改方法,其他都使用常规灯条喷码方法
         /// </summary>
